@@ -1,0 +1,194 @@
+body {
+    background-color:aquamarine;
+
+    font-size: 20px;
+    margin-bottom: 100vh;
+}
+
+.container {
+    background:lightseagreen;
+    margin-bottom: 50px;
+}
+
+section {
+    background-color: #dceff6;
+
+    min-height: 100vh;
+    margin-bottom: 100px;
+}
+
+header {
+    background-color: powderblue;
+    padding: 40px;
+}
+
+main {
+    background-color: cornflowerblue;
+}
+
+footer {
+    background-color: royalblue;
+}
+
+.box {
+    width: 50px;
+    height: 50px;
+    background: mediumvioletred;
+    border: 10px solid black;
+}
+
+.big {
+    width: 75px;
+    height: 75px;
+    background: hotpink;
+}
+
+.tall {
+    height: 600px;
+}
+
+.no-width {
+    width: auto;
+}
+
+.inline {
+    display: inline;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+img {
+    /*float: left;*/
+    float: right;
+}
+
+/* Flex Properties*/
+
+.flex {
+    display: flex;
+}
+
+.justify-content-end {
+    justify-content: end;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.justify-content-space-between {
+    justify-content: space-between;
+}
+
+.justify-content-space-around {
+    justify-content: space-around;
+}
+
+.align-items {
+    align-items: end;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.grow {
+    flex-grow: 1;
+    background-color: seagreen;
+}
+
+.no-shrink {
+    flex-shrink: 0;
+    background-color: dodgerblue;
+}
+
+.half-shrink {
+    flex-shrink: 0.5;
+    background-color: darkblue;
+}
+
+.basis {
+    flex-basis: 100px;
+    background-color: steelblue;
+}
+
+.full-spring {
+    flex: 0 1 10px;
+}
+
+.gap {
+    gap: 10px;
+}
+
+
+
+/* Grid Properties */
+
+.grid {
+    display: grid;
+}
+
+.two-col {
+    grid-template-columns: 150px 400px;
+}
+
+.six-col {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.two-third-col {
+    grid-template-columns: 2fr 1fr;
+}
+
+.sidebar {
+    grid-template-columns: 200px 1fr;
+}
+
+.align-content-center {
+    align-content: center;
+}
+
+.align-content-end {
+    align-content: end;
+}
+
+/* Grid Layout */
+
+.basic-stacked-layout {
+    grid-template-rows: 150px 1fr 80px;
+}
+
+.sidebar-layout {
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 300px 1fr;
+}
+
+.span-2 {
+    grid-column: span 2;
+}
+
+.sidebar-layout-areas {
+    grid-template: auto 1fr auto 100px / 300px 1fr;
+    grid-template-areas:
+    "header header"
+    "sidebar main"
+    "footer footer";
+}
+
+.header-area {
+    grid-area: header;
+}
+
+.footer-area {
+    grid-area: footer;
+}
